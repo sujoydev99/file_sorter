@@ -17,16 +17,14 @@ increment = int(batchSize)
 arr=os.listdir(sourceRoot)
 arr=sorted(arr)
 counter = int(len(arr)/int(increment))
-fileCounter = 0
 
 # folder loop
-for i in range(1,counter+1):
-     print("processing folder no. " + str(i))
-     os.makedirs(destinationRoot+"/Folder_"+str(i)+"/input/normal")
-     os.makedirs(destinationRoot+"/Folder_"+str(i)+"/input/projection")
+for i in range(0,counter):
+     print("processing folder no. " + str(i+1))
+     os.makedirs(destinationRoot+"/Folder_"+str(i+1)+"/input/normal")
+     os.makedirs(destinationRoot+"/Folder_"+str(i+1)+"/input/projection")
     #  image loop
      for j in range (0, increment):
-         shutil.copy(sourceRoot+"/"+arr[fileCounter], destinationRoot+"/Folder_"+str(i)+"/input/normal/"+arr[fileCounter])
-         shutil.copy(sourceRoot+"/"+arr[fileCounter], destinationRoot+"/Folder_"+str(i)+"/input/projection/"+arr[fileCounter])
-         fileCounter += 1 
+         shutil.copy(sourceRoot+"/"+arr[j*counter+i], destinationRoot+"/Folder_"+str(i+1)+"/input/normal/"+arr[j*counter+i])
+         shutil.copy(sourceRoot+"/"+arr[j*counter+i], destinationRoot+"/Folder_"+str(i+1)+"/input/projection/"+arr[j*counter+i])
          
