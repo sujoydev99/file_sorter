@@ -39,7 +39,7 @@ for i in range(0,counter):
          print(arr[j*counter+i])
          shutil.copy(sourceRoot+"/"+arr[j*counter+i], destinationRoot+"/Frame_"+str(i+1)+"/Input/normal/"+(str(j+1).zfill(prefixLength))+"."+arr[j*counter+i].split(".")[1])
          shutil.copy(sourceRoot+"/"+arr[j*counter+i], destinationRoot+"/Frame_"+str(i+1)+"/Input/projection/"+(str(j+1).zfill(prefixLength))+"."+arr[j*counter+i].split(".")[1])
-         shutil.copy(sourceRoot+"/"+arr[j*counter+i], destinationRoot+"/Frame_"+str(i+1)+"/Project/"+(str(j+1).zfill(prefixLength))+"."+arr[j*counter+i].split(".")[1])
-         shutil.copy(sourceRoot+"/"+arr[j*counter+i], destinationRoot+"/Frame_"+str(i+1)+"/Result/"+(str(j+1).zfill(prefixLength))+"."+arr[j*counter+i].split(".")[1])
-         shutil.copy(sourceRoot+"/"+arr[j*counter+i], destinationRoot+"/Frame_"+str(i+1)+"/Temp/"+(str(j+1).zfill(prefixLength))+"."+arr[j*counter+i].split(".")[1])
+        #  shutil.copy(sourceRoot+"/"+arr[j*counter+i], destinationRoot+"/Frame_"+str(i+1)+"/Project/"+(str(j+1).zfill(prefixLength))+"."+arr[j*counter+i].split(".")[1])
+        #  shutil.copy(sourceRoot+"/"+arr[j*counter+i], destinationRoot+"/Frame_"+str(i+1)+"/Result/"+(str(j+1).zfill(prefixLength))+"."+arr[j*counter+i].split(".")[1])
+        #  shutil.copy(sourceRoot+"/"+arr[j*counter+i], destinationRoot+"/Frame_"+str(i+1)+"/Temp/"+(str(j+1).zfill(prefixLength))+"."+arr[j*counter+i].split(".")[1])
          
